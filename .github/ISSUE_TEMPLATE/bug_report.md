@@ -20,20 +20,24 @@ Steps to reproduce the behavior:
 3. Run '....'
 4. See error
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
-
 **Actual Behavior**
+```
+vanilla ksp code snippet
+```
 What actually happened. Include any error messages or unexpected behavior.
+
+**Expected behavior**
+```
+vanilla ksp code snippet
+```
+A clear and concise description of what you expected to happen.
 
 **CKSP Version**
 Specify the version of CKSP you are using.
 
 **Environment (please complete the following information):**
 - OS: [e.g. Windows/Linux/Mac]
-- Compiler version [e.g. GCC 10.2]
-- Using VS Code plugin/Sublime Text build system: [Yes/No]
+- OS architecture [arm/x86]
+- Using VS Code plugin: [Yes/No]
+- Using Sublime Text build system: [Yes/No]
 - Other relevant software [e.g. dependencies, IDE version]
-
-**Additional Context**
-Add any other context about the problem here. If applicable, add screenshots or logs to help explain.
