@@ -1,51 +1,42 @@
 # Changelog
 
-## [Unreleased]
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Released]
 
 ### Added
-- Introduced new executables for various platforms:
-  - **x86**: New and improved executables for better performance.
-  - **ARM**: Updated executables, including fixes and enhancements for both **ARM** and **ARM64** platforms.
-  - **Windows**: Multiple new Windows-specific executables to enhance platform support.
-  - **macOS**: Updated executables for **macOS x86** and **macOS ARM**, including a hotfix.
+- Add updated x86, arm, windows, and m64 executables.
+- Add documentation.
+- Add new classes to tackle 'memory exhausted' error due to bison parsing stack overflow.
+- Add max_block_line info.
+- Add changelog and changelog script.
+- Add create_release.sh script.
+- Add missing nks command.
+- Add ConstantPromotion, VariablePruning, and several other optimization classes.
+- Add new lowering techniques and AST structural classes.
+- Add error handling and debugging features.
+- Add case files for object datastructure implementation.
 
-- New classes and functionality:
-  - Added several optimization classes: `ConstExprValidator`, `ConstExprPropagation`, `DeadCodeElimination`, and `VariablePruning` to enhance performance and reduce memory usage.
-  - Introduced `FunctionCallHoisting`, `AccessChain`, and `MethodChain` for better function and method handling.
-  - Added lowering support for various nodes, including **SingleReturn**, **NDArray**, and **Struct Nodes**.
-  - **KSP** improvements: Introduced `KSPDeclarations` and `KSPPersistency` classes, and improved syntax checks.
-  
-- Enhanced error handling and reporting in the **Import Processor** and array initialization logic, reducing potential issues during execution.
+### Updated
+- Update various executables for different platforms including hotfixes.
+- Update create_release processes.
+- Update todo list and .gitignore files.
+- Update TypeCasting, FunctionInlining, and NodeHandling to improve code optimization and error handling.
+- Update ASTDesugar, ASTOptimization, and various other compiler tools and scripts.
+- Update bachelor documentation.
+- Update builtins definitions and parsing functions.
 
 ### Fixed
-- Significant performance improvements:
-  - Drastically sped up function inlining and handling of return-only functions.
-  - Resolved issues related to **Composite Type** substitution and declaration parsing when initializing arrays.
-  
-- **Memory Exhaustion** and optimization errors:
-  - Fixed parsing issues and improved memory management when handling large datasets or **Bison** stack overflows.
-  - Addressed numerous bugs, including double assignment optimizations and killing assignments when the reference is also an `r_value`.
-  
-- Multiple bug fixes for `move_on_init_callback()` and variable promotion issues related to nested functions.
-  
-- Resolved struct desugaring and NDArray assignment issues, improving the overall functionality of arrays and structures.
+- Fix error reporting in Import Processor.
+- Fix multiple bugs in assignment and type parsing.
+- Fix optimization issues including double assignments and time-textures compiling.
+- Fix issues related to function parameter handling and method chaining.
+- Fix various issues with NodeAST construction and property functions.
+- Fix incrementer issues in macros and array initializers.
 
-- Fixed numerous edge cases in **TypeCasting** and **TypeInference** classes, including handling **Nullptr** issues and variable parameter detection.
-
-### Changed
-- Refactored major components, including **AST**, **NodeDataStructures**, and **TypeRegistry**, for better modularity and easier maintenance.
-  
-- Updated the **create_release.sh** script for more reliable builds.
-  
-- Extensive renaming of internal structures and methods to improve readability and alignment with the new **Type System**.
-
-### Documentation
-- Added detailed documentation for new and existing classes, methods, and optimizations.
-  
-- Updated the Wiki and included examples to guide through the lowering processes and function inlining.
-
-### Hotfixes
-- Applied multiple hotfixes for **v0.0.6**, including platform-specific executable updates and issues related to array handling, struct lowering, and dead code elimination.
-
-## [v0.0.6] - Hotfix
-- Fixed critical bugs in the **cksp** plugin regarding array handling and memory issues.
+## [0.0.6] - 2024-XX-XX
+### Added
+- Initial release of version 0.0.6 with comprehensive updates to executable handling and compiler optimization techniques.
