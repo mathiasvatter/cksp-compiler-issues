@@ -1,9 +1,6 @@
-Hier ist der übersetzte und bereinigte Changelog, basierend auf den relevanten Commit-Nachrichten:  
-
----
-
 # Changelog  
-## [Unreleased]  
+
+## [Pre-Release]  
 
 ### Added  
 - **New AST Nodes and Features**: Introduced `NodeFunctionVar` and `NodeFunctionVarRef` nodes, enabling support for higher-order functions and more dynamic programming paradigms.  
@@ -25,7 +22,3 @@ Hier ist der übersetzte und bereinigte Changelog, basierend auf den relevanten 
 
 ### Removed  
 - **Legacy Code**: Cleaned up outdated and redundant features, such as `ksp-compiler.wiki` submodules and unnecessary constant declarations.  
-
----
-
-Falls etwas fehlt oder detaillierter erläutert werden soll, lassen Sie es mich wissen!
