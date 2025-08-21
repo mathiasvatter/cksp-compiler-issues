@@ -1,9 +1,9 @@
 # cksp - Public Issue Tracker
 
-Welcome to the public issue tracker for `cksp`! `cksp` is a compiler developed in C++ designed to translate cKSP files into text files utilizing the Vanilla KSP Syntax. With significant performance enhancements and syntax improvements, `cksp` aims to streamline the development process for KSP scripters. Additionally, it can directly parse Vanilla KSP Syntax, offering a seamless transition for current developers.
+Welcome to the public issue tracker for `cksp`! `cksp` is a compiler/transpiler developed in C++ designed to translate cKSP files into text files utilizing the Vanilla KSP Syntax.
 
 ## How to Use This Repository
-This repository is intended for the reporting of bugs and the requesting of new features for the `cksp` project. If you have encountered an issue or have a suggestion for how we can improve `cksp`, we encourage you to open an issue here.
+This repository is intended for the reporting of bugs and the requesting of new features for the `cksp` project. If you have encountered an issue or have a suggestion for how we can improve `cksp`, I encourage you to open an issue here.
 
 ### Reporting Bugs
 When reporting bugs, please include the following information:
@@ -20,12 +20,12 @@ For feature requests, please provide:
 - Any relevant examples or mockups.
 
 ## Contributing
-While this repository is primarily for issue tracking, we value community contributions. If you're interested in contributing to the `cksp` project, please check out our main repository's CONTRIBUTING.md for more information.
+Contributing to the cksp project might be valuable in the future. Currently, however, the project is still closed-source and in a sort of beta version. Once the releases are more stable I will open up the main repository for contributions.
 
 ## Support
-If you have any questions or need support with `cksp`, please open an issue here with the tag [Question] or [Support], and we will do our best to assist you.
+If you have any questions or need support with `cksp`, please open an issue here with the tag [Question] or [Support], and I will do my best to assist you.
 
 ## Stay Updated
-For the latest updates on `cksp`, follow our main project repository and join our community discussions.
+For the latest updates on `cksp`, feel free to join the community discussions here.
 
-Thank you for your interest in `cksp` and for helping us make it better!
+Thank you for your interest in `cksp` and for helping to make it better!
