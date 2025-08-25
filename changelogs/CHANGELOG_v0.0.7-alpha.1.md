@@ -1,6 +1,6 @@
 # Changelog  
 
-## [Pre-Release]  
+## \[0.0.7-alpha.1] – 2024-12-06
 
 ### Added  
 - **New AST Nodes and Features**: Introduced `NodeFunctionVar` and `NodeFunctionVarRef` nodes, enabling support for higher-order functions and more dynamic programming paradigms.  
