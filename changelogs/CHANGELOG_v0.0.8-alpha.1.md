@@ -1,7 +1,21 @@
-Fix Issue in DeadCodeElimination where too many assignments would be removed
-Fixed issue #40 where overloaded boolean operators (and single function calls) where not working in conditions
-Update short-circuit transformation so that only conditions with user-defined functions that are NOT expression functions get transformed
-Bump version to v0.0.8-alpha.1; Add TOC4 to testing pipeline; Fix case where int() would not be removed when argument was integer array; Remove wiki submodule
-Update changelog.md; Add ascii art to readme.md
-Bump version to full release candidate v0.0.7
-Merge remote-tracking branch 'origin/master' into development
+# Changelog
+
+## \[0.0.8-alpha.1] – 2025-10-07
+
+### Added
+
+* Added **TOC4** to the testing pipeline for enhanced compatibility testing.
+
+### Changed
+
+* Improved **short-circuit evaluation transformation**: now only applied when user-defined functions (that are not expression functions) are used in conditions.
+
+### Fixed
+
+* Fixed **issue #40**: overloaded boolean operators and single-function calls now work correctly in conditional expressions.
+* Fixed an issue in **Dead Code Elimination**, where too many assignments were incorrectly removed.
+* Fixed a bug where `int()` was not removed during compilation if the argument was already an integer array.
+
+### Removed
+
+* Removed the obsolete `wiki` submodule from the project.
