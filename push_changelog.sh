@@ -13,10 +13,10 @@ if [[ "$CURRENT_BRANCH" != "$BRANCH" ]]; then
 fi
 
 # Überprüfe, ob es Änderungen im Arbeitsverzeichnis gibt
-if git diff --quiet && git diff --cached --quiet; then
+if [[ -z "$(git status --porcelain)" ]]; then
     echo "No changes to commit."
 else
-    git add *
+    git add -A
 
     git commit -m "$COMMIT_MESSAGE"
 
