@@ -1,7 +1,8 @@
-name: Bug report new
+name: Bug report
 description: Create a report to help us improve CKSP
 title: "[BUG] "
 labels: ["bug"]
+projects: ["CKSP Compiler"]
 assignees: mathiasvatter
 body:
   - type: markdown
@@ -30,15 +31,9 @@ body:
         ```cksp
         // Code snippet that causes the error
         ```
-        
-        Steps to reproduce:
-        1. Use '...'
-        2. Compile with '...'
-        3. Run '...'
-        4. See error
       render: markdown
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: actual_behavior
@@ -53,7 +48,7 @@ body:
         ```
       render: markdown
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: expected_behavior
@@ -67,7 +62,7 @@ body:
         ```
       render: markdown
     validations:
-      required: true
+      required: false
 
   - type: input
     id: cksp_version
@@ -86,6 +81,7 @@ body:
         - Windows
         - macOS
         - Linux
+        - All
     validations:
       required: true
 
@@ -96,6 +92,7 @@ body:
       options:
         - x86_64
         - arm64
+        - All
     validations:
       required: true
 
@@ -106,11 +103,3 @@ body:
       options:
         - label: Using VS Code plugin
         - label: Using Sublime Text build system
-
-  - type: textarea
-    id: other
-    attributes:
-      label: Other relevant information
-      description: |
-        Any additional context that might help:
-        IDE version, dependencies, Kontakt version, logs, etc.
