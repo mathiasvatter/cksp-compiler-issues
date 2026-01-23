@@ -35,35 +35,6 @@ body:
     validations:
       required: false
 
-  - type: textarea
-    id: actual_behavior
-    attributes:
-      label: Actual Behavior
-      description: |
-        What actually happened?
-        Include any error messages or unexpected behavior.
-      placeholder: |
-        ```ksp
-        // Generated vanilla KSP code
-        ```
-      render: markdown
-    validations:
-      required: false
-
-  - type: textarea
-    id: expected_behavior
-    attributes:
-      label: Expected Behavior
-      description: |
-        What did you expect to happen instead?
-      placeholder: |
-        ```ksp
-        // Expected vanilla KSP output
-        ```
-      render: markdown
-    validations:
-      required: false
-
   - type: input
     id: cksp_version
     attributes:
@@ -78,10 +49,10 @@ body:
     attributes:
       label: Operating System
       options:
-        - Windows
-        - macOS
-        - Linux
         - All
+        - macOS
+        - Windows
+        - Linux
     validations:
       required: true
 
@@ -90,9 +61,9 @@ body:
     attributes:
       label: OS Architecture
       options:
-        - x86_64
-        - arm64
         - All
+        - arm64
+        - x86_64
     validations:
       required: true
 
